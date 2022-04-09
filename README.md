@@ -39,3 +39,10 @@ This is the third feature in this contract that allows bulk sending of tokens of
 The selfdestruct function. once selfdestruct is called, you can't interact with a Smart Contract anymore.On the surface it looks very similar
 to our withdrawAllMoney function, with one major difference: Once you call destroySmartContract, the address of the Smart Contract will contain
 no more code. You can still send transactions to the address and transfer Ether there, but there won't be any code that could send you the Ether back.
+
+
+# 4. Scope of future work
+
+Update of Etherscan code
+Complete FrontEnd implementation of buying of tickets
+Dvelopment of a Middleware for a self destroy inorder to protect our contract
