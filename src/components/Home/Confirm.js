@@ -157,18 +157,6 @@ export default function Confirm() {
             })
             return;
         }
-        // 
-        // if(currentNetwork!==56 && currentNetwork!==128 && currentNetwork!==97) {
-        //     toast({
-        //         toastID,
-        //         title: 'Incorrect Network detected!',
-        //         description: "Please switch to supported networks.",
-        //         status: 'error',
-        //         duration: 3000,
-        //         isClosable: true,
-        //     })
-        //     return;
-        // }
         if(!amount) {
             toast({
                 toastID,

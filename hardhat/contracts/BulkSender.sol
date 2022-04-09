@@ -11,6 +11,12 @@ contract BulkSender is Authorizable {
     using SafeMath for uint256;
 
     event LogTokenBulkSent(address from, uint256 total);
+    event purchaseTickets(
+        address indexed _from,
+        uint256 value,
+        bytes32 indexed uuid,
+        uint256 time
+    );
     Nestcoin nestcoin;
 
     constructor(address tokenAddress) {
@@ -57,11 +63,13 @@ contract BulkSender is Authorizable {
         emit LogTokenBulkSent(from, sendAmount);
     }
 
-    function _destroyContract() private { 
-        selfdestruct(owner); 
+    //Buy of Tickets
+    function purchaseTickets(uint256 _value, bytes32 uuid) public {
+        nestcoin.transferFrom(msg.sender, address(this), _value);
+        emit purchaseTickets(msg.sender, _value, uuid, block.timestamp);
     }
 
-    function destroyContract() public onlyOwner {
-        _destroyContract();
+    function _destroyContract() private {
+        selfdestruct(owner);
     }
 }

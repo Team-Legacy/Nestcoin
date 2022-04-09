@@ -211,7 +211,6 @@ import convertStringAddrToArr from 'utils/convertStringAddrToArr';
                 <GridItem colSpan={1}>
                   <FormControl display='flex' alignItems='flex-end' justifyContent='flex-end' mt="8" pr="4">
                   <FormLabel htmlFor='pro' mb='0'>
-                      Multi Value
                       <Tooltip label='In Multi Value Mode, you can set different amounts of token to be sent to each address' 
                       fontSize='sm' rounded="md">
                           <InfoOutlineIcon ml="2"/>
