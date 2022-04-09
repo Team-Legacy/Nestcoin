@@ -1,6 +1,6 @@
 # Team-Legacy Task 1
 
-Developing a system system that allows batch transactions to ensure quick distribution of the created currency as efficiently as possible
+Developing a system that allows batch transactions to ensure quick distribution of the created currency as efficiently as possible
 
 Using the power of Web3 a solution has been created in form of a smart contract
 
@@ -12,7 +12,7 @@ onto the blockchain through a “proof of stake” protocol. Both cryptocurrency
 in the Nestcoin.sol contract there is a function called mint which is publicly accessible, this means the contract owner can call it anytime
 the function requires two input and address and amount to be minted
 
-The currency created (Nestcoin) is and Erc 20 token which means it will define six different implementation coding functions for the benefit
+The currency created (Nestcoin) is an Erc 20 token which means it will define six different implementation coding functions for the benefit
 of other tokens within the Ethereum system. they include;
 
 1. total supply
