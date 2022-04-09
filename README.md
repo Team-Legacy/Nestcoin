@@ -47,6 +47,9 @@ Update of Etherscan code
 Complete FrontEnd implementation of buying of tickets
 Dvelopment of a Middleware for a self destroy inorder to protect our contract
 
+# Project Url
+## https://statuesque-bombolone-55df99.netlify.app/
+
 # Verified Comtract Url
 
 ## Nestcoin Smart Contract: 
