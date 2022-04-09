@@ -47,11 +47,12 @@ Update of Etherscan code
 Complete FrontEnd implementation of buying of tickets
 Dvelopment of a Middleware for a self destroy inorder to protect our contract
 
-# Comtract Url
+# Verified Comtract Url
 
-## Nestcoin Smart Contract:  https://kovan.etherscan.io/address/0x0747cd400045Db476b12312E61AF9194CA629b84#code
+## Nestcoin Smart Contract: 
+ https://kovan.etherscan.io/address/0x0747cd400045Db476b12312E61AF9194CA629b84#code
 
-## Bulk Sender Smart Contract:
-https://kovan.etherscan.io/address/0x1828f6d9Bd8142599757d1550dfb10F17714336d#code
+## Bulk Sender Smart Contract: 
+ https://kovan.etherscan.io/address/0x1828f6d9Bd8142599757d1550dfb10F17714336d#code
 
 
