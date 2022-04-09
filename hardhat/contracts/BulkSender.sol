@@ -22,7 +22,7 @@ contract BulkSender is Authorizable {
     constructor(address tokenAddress) {
         nestcoin = Nestcoin(tokenAddress);
     }
-
+    //FUNCTION THAT TAKES IN AN ARRAY OF ADDRESS AND BULK TRANSFERS SAME AMOUNT TO ALL
     function AirdropSameValue(address[] calldata _to, uint256 _value)
         external
         onlyAuthorized
@@ -39,6 +39,8 @@ contract BulkSender is Authorizable {
         }
         emit LogTokenBulkSent(from, sendAmount);
     }
+    
+        //FUNCTION THAT TAKES IN AN ARRAY OF ADDRESS AND BULK TRANSFERS DIFFERENT AMOUNT TO ALL
 
     function AirdropDifferentValue(
         address[] calldata _to,
@@ -68,7 +70,7 @@ contract BulkSender is Authorizable {
         nestcoin.transferFrom(msg.sender, address(this), _value);
         emit purchaseTickets(msg.sender, _value, uuid, block.timestamp);
     }
-
+    //SELF DESTRUCT FUNTION THAT SENDS ALL TOKENS TO THE OWNER OF THE CONTRACT IN CASE OF ANY HACK
     function _destroyContract() private {
         selfdestruct(owner);
     }
